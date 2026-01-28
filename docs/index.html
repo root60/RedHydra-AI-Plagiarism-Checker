@@ -1,46 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>RedHydra AI & Plagiarism Checker</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>RedHydra — AI & Plagiarism Detection</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="dark">
 
-<div class="bg"></div>
+<button class="theme-toggle" onclick="toggleTheme()">🌗</button>
+
+<div class="bg-gradient"></div>
+<div class="bg-noise"></div>
 
 <header class="hero">
   <img src="https://raw.githubusercontent.com/root60/WPScrapper/refs/heads/main/logo.png" class="logo">
   <h1>RedHydra</h1>
-  <p>Advanced AI & Plagiarism Detection Engine</p>
-  <a class="btn" href="https://github.com/root60">View on GitHub</a>
+  <p>AI & Plagiarism Detection — Built for 2026</p>
 </header>
 
-<section class="section">
-  <h2>Why RedHydra?</h2>
-  <p>Offline, explainable detection of AI-generated, AI-paraphrased and plagiarized text.</p>
+<!-- Screenshot Carousel -->
+<section class="carousel">
+  <img src="dashboard.png" class="active">
+  <img src="download_external_model.png">
+  <img src="result.png">
 </section>
 
-<section class="cards">
-  <div class="card">AI Writing Detection</div>
-  <div class="card">AI-Paraphrase Detection</div>
-  <div class="card">Plagiarism Analysis</div>
+<!-- How Detection Works -->
+<section class="how">
+  <h2>How Detection Works</h2>
+  <div class="steps">
+    <div>📥 Document Ingest</div>
+    <div>🧠 AI Probability Modeling</div>
+    <div>🟣 Paraphrase Analysis</div>
+    <div>🔴 Plagiarism Matching</div>
+    <div>📊 Visual Report</div>
+  </div>
 </section>
 
-<section class="section">
-  <h2>Benchmarks</h2>
-  <table>
-    <tr><th>System</th><th>Offline</th><th>Paraphrase</th><th>Explainable</th></tr>
-    <tr><td>RedHydra</td><td>✔</td><td>✔</td><td>✔</td></tr>
-    <tr><td>Turnitin</td><td>✖</td><td>Partial</td><td>✖</td></tr>
-    <tr><td>GPT Detectors</td><td>✖</td><td>✖</td><td>✖</td></tr>
-  </table>
+<!-- Animated SVG Architecture -->
+<section class="architecture">
+<h2>System Architecture</h2>
+<svg viewBox="0 0 600 260">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7c3aed"/>
+    </marker>
+  </defs>
+
+  <g class="node"><rect x="20" y="110"/><text x="35" y="140">Input</text></g>
+  <g class="node"><rect x="160" y="110"/><text x="175" y="140">AI Detector</text></g>
+  <g class="node"><rect x="320" y="50"/><text x="330" y="80">Paraphrase</text></g>
+  <g class="node"><rect x="320" y="170"/><text x="335" y="200">Plagiarism</text></g>
+  <g class="node"><rect x="470" y="110"/><text x="485" y="140">Report</text></g>
+
+  <line x1="100" y1="130" x2="160" y2="130" marker-end="url(#arrow)"/>
+  <line x1="260" y1="130" x2="320" y2="80" marker-end="url(#arrow)"/>
+  <line x1="260" y1="130" x2="320" y2="200" marker-end="url(#arrow)"/>
+  <line x1="420" y1="130" x2="470" y2="130" marker-end="url(#arrow)"/>
+</svg>
 </section>
 
-<footer>
-  RedHydra — Precision over paranoia.
-</footer>
+<!-- Benchmark Charts -->
+<section class="bench">
+<h2>Benchmark Overview</h2>
+<img src="benchmark_chart.svg" alt="Benchmark chart">
+</section>
 
+<footer>RedHydra — Precision over paranoia.</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
