@@ -1,0 +1,13 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+<rect width="400" height="220" fill="#020617"/>
+<text x="140" y="20" fill="#e5e7eb">Detection Capability</text>
+
+<text x="20" y="70" fill="#e5e7eb">RedHydra</text>
+<rect x="120" y="55" width="220" height="16" fill="#22c55e"/>
+
+<text x="20" y="110" fill="#e5e7eb">Turnitin</text>
+<rect x="120" y="95" width="120" height="16" fill="#eab308"/>
+
+<text x="20" y="150" fill="#e5e7eb">GPT Detectors</text>
+<rect x="120" y="135" width="60" height="16" fill="#ef4444"/>
+</svg>
