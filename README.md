@@ -131,24 +131,6 @@ Download external AI model:
 py -3 AII.py download_model followsci/bert-ai-text-detector
 ```
 
----
-
-## 🌍 GitHub Pages (Landing Page)
-
-RedHydra is ready for **GitHub Pages**.
-
-### Suggested setup
-```
-/docs
- ├── index.html
- ├── styles.css
- └── assets/
-```
-
-Use the README visuals + architecture diagram as your landing content.
-
----
-
 ## 🔐 Privacy & Ethics
 
 - No cloud calls
