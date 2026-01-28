@@ -1,15 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background: #0b0f19;
   color: #e5e7eb;
 }
 
-.bg {
+.background {
   position: fixed;
   inset: 0;
-  background: radial-gradient(circle at 20% 20%, #3b0764, transparent 40%),
-              radial-gradient(circle at 80% 80%, #7f1d1d, transparent 40%);
+  background:
+    radial-gradient(circle at 20% 20%, #3b0764, transparent 40%),
+    radial-gradient(circle at 80% 80%, #7f1d1d, transparent 40%);
   z-index: -1;
 }
 
@@ -20,6 +25,11 @@ body {
 
 .logo {
   width: 120px;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  opacity: 0.85;
 }
 
 .btn {
@@ -32,9 +42,14 @@ body {
   border-radius: 0.5rem;
 }
 
+.btn:hover {
+  background: #b91c1c;
+}
+
 .section {
   max-width: 900px;
   margin: 4rem auto;
+  padding: 0 1rem;
   text-align: center;
 }
 
@@ -42,6 +57,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  padding: 0 1rem;
 }
 
 .card {
@@ -49,6 +65,7 @@ body {
   border: 1px solid #1f2933;
   padding: 1.5rem;
   border-radius: 1rem;
+  min-width: 220px;
 }
 
 table {
