@@ -423,6 +423,190 @@ footer {
   opacity: 0.7;
 }
 
+/* Use cases section */
+.use-cases {
+  max-width: 900px;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.use-cases h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.use-cases p {
+  margin: 0 auto 1.5rem;
+  max-width: 600px;
+  text-align: center;
+}
+
+.cases {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.case {
+  flex: 1 1 calc(33.333% - 1rem);
+  background: linear-gradient(90deg, rgba(2, 6, 23, 0.8), rgba(31, 41, 55, 0.8));
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  border-radius: 1rem;
+  padding: 1.2rem 1rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.6s ease;
+  color: inherit;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.case:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.case.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.case h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #7c3aed;
+}
+
+.case p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Add spacing between multiple paragraphs inside a case card */
+.case p:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+/* User manual section */
+.user-manual {
+  max-width: 900px;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.user-manual h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.user-manual ol {
+  margin-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.user-manual li {
+  margin-bottom: 0.8rem;
+}
+
+.user-manual code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+  font-size: 0.9rem;
+}
+
+.user-manual p {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* Showcase section */
+.showcase {
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.showcase h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.project {
+  background: linear-gradient(90deg, rgba(2, 6, 23, 0.8), rgba(31, 41, 55, 0.8));
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  flex: 1 1 calc(50% - 1rem);
+  max-width: calc(50% - 1rem);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+  color: inherit;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.project:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-size: 1.4rem;
+}
+
+.project h3 a {
+  color: #7c3aed;
+  text-decoration: none;
+}
+
+.project p {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.project ul {
+  margin-left: 1rem;
+  padding-left: 1rem;
+  list-style: disc;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .case {
+    flex-basis: 100%;
+  }
+  .project {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
 /* Responsive design */
 @media (max-width: 600px) {
   .hero-title {
@@ -434,4 +618,4 @@ footer {
   .steps div {
     padding: 0.8rem 1.2rem;
   }
-} 
+}

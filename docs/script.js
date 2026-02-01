@@ -27,12 +27,15 @@ setInterval(() => {
   slides[currentSlide].classList.add('active');
 }, 4000);
 
-// Animate steps on scroll into view using IntersectionObserver.
+// Animate elements on scroll into view using IntersectionObserver. This includes
+// the detection steps as well as cards in the use‑case and showcase sections.
 document.addEventListener('DOMContentLoaded', () => {
-  const steps = document.querySelectorAll('.steps div');
+  // Select all elements that should reveal on scroll: steps, use‑case cards and projects.
+  const revealSelector = ['.steps div', '.case', '.project'];
+  const elements = document.querySelectorAll(revealSelector.join(', '));
   if (!('IntersectionObserver' in window)) {
-    // Fallback for older browsers: show all steps immediately.
-    steps.forEach((el) => el.classList.add('visible'));
+    // Fallback for older browsers: show all elements immediately.
+    elements.forEach((el) => el.classList.add('visible'));
     return;
   }
   const observer = new IntersectionObserver(
@@ -46,5 +49,5 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     { threshold: 0.1 }
   );
-  steps.forEach((el) => observer.observe(el));
-}); 
+  elements.forEach((el) => observer.observe(el));
+});
