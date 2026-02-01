@@ -30,7 +30,7 @@
 </p>
 
 <p align="center">
-  <img src="download external model.png" width="95%"/>
+  <img src="downloadexternalmodel.png" width="95%"/>
 </p>
 
 <p align="center">
