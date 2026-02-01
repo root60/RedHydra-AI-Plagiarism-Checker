@@ -4,10 +4,10 @@
     Detection Capability Comparison
   </text>
   <!-- Turnitin bar -->
-  <text x="20" y="110" fill="#e5e7eb" font-size="14">Turnitin</text>
+  <text x="20" y="70" fill="#e5e7eb" font-size="14">Turnitin</text>
   <rect x="120" y="55" width="220" height="16" fill="#eab308" rx="4" />
     <!-- RedHydra bar -->
-  <text x="20" y="70" fill="#e5e7eb" font-size="14">RedHydra</text>
+  <text x="20" y="110" fill="#e5e7eb" font-size="14">RedHydra</text>
   <rect x="120" y="95" width="210" height="16" fill="#22c55e" rx="4" />
   <!-- GPT Detectors bar -->
   <text x="20" y="150" fill="#e5e7eb" font-size="14">GPT Detectors</text>
