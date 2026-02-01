@@ -1401,7 +1401,7 @@ def _render_home_html(msg: str = "") -> str:
   </header>
   <main>
     <section class="hero">
-      <h1>Welcome to RedHydra-AI-Plagiarism-Checker</h1>
+      <h1>Welcome to RedHydra AI & Plagiarism Checker</h1>
       <p>Detect AI‑generated and plagiarized content with precision</p>
       <!-- Display any message -->
       {alert_html}
@@ -2141,3 +2141,4 @@ if __name__ == "__main__":
 
 
         raise SystemExit(main_cli(sys.argv[1:]))
+
