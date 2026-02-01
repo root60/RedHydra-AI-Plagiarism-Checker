@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RedHydra — AI &amp; Plagiarism Detection</title>
+  <!-- Fonts and styles -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="dark">
+  <!-- Fixed navigation bar with direct link to the tool repository -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- Logo reused from the existing project -->
+      <img
+        class="nav-logo"
+        src="https://raw.githubusercontent.com/root60/WPScrapper/refs/heads/main/logo.png"
+        alt="RedHydra logo"
+      />
+      <div class="nav-actions">
+        <a
+          href="https://github.com/root60/RedHydra-AI-Plagiarism-Checker"
+          target="_blank"
+          rel="noopener"
+          class="nav-link"
+          >Tool Repository</a
+        >
+        <!-- Theme toggle inside nav -->
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+          <span class="icon-sun">🌞</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Gradient and texture backgrounds -->
+  <div class="bg-gradient"></div>
+  <div class="bg-noise"></div>
+
+  <!-- Hero section -->
+  <header class="hero">
+    <!-- Decorative blob behind the hero content -->
+    <div class="decorative-shape"></div>
+    <img
+      src="https://raw.githubusercontent.com/root60/WPScrapper/refs/heads/main/logo.png"
+      class="logo"
+      alt="RedHydra logo"
+    />
+    <h1 class="hero-title">RedHydra</h1>
+    <p class="hero-subtitle">
+      An open‑source, lifetime‑free AI &amp; plagiarism detection platform
+    </p>
+    <!-- Call to action button linking straight to the tool repository -->
+    <a
+      href="https://github.com/root60/RedHydra-AI-Plagiarism-Checker"
+      target="_blank"
+      rel="noopener"
+      class="cta-button"
+      >Launch the Tool</a
+    >
+  </header>
+
+  <!-- Screenshot carousel -->
+  <section class="carousel" aria-label="Screenshots">
+    <img
+      src="dashboard.png"
+      alt="Dashboard screenshot"
+      class="active"
+    />
+    <img
+      src="downloadexternalmodel.png"
+      alt="External model download screenshot"
+    />
+    <img src="result.png" alt="Detection result screenshot" />
+  </section>
+
+  <!-- How detection works -->
+  <section class="how">
+    <h2>How detection works</h2>
+    <div class="steps">
+      <div>Document ingest</div>
+      <div>AI probability modeling</div>
+      <div>Paraphrase analysis</div>
+      <div>Plagiarism matching</div>
+      <div>Visual report</div>
+    </div>
+  </section>
+
+  <!-- System architecture diagram -->
+  <section class="architecture">
+    <h2>System architecture</h2>
+    <svg viewBox="0 0 600 260" aria-hidden="true">
+      <defs>
+        <marker
+          id="arrow"
+          markerWidth="10"
+          markerHeight="10"
+          refX="6"
+          refY="3"
+          orient="auto"
+        >
+          <path d="M0,0 L0,6 L9,3 z" fill="#7c3aed" />
+        </marker>
+      </defs>
+      <g class="node">
+        <rect x="20" y="110" />
+        <text x="35" y="140">Input</text>
+      </g>
+      <g class="node">
+        <rect x="160" y="110" />
+        <text x="175" y="140">AI Detector</text>
+      </g>
+      <g class="node">
+        <rect x="320" y="50" />
+        <text x="330" y="80">Paraphrase</text>
+      </g>
+      <g class="node">
+        <rect x="320" y="170" />
+        <text x="335" y="200">Plagiarism</text>
+      </g>
+      <g class="node">
+        <rect x="470" y="110" />
+        <text x="485" y="140">Report</text>
+      </g>
+      <!-- Animated connecting lines -->
+      <line x1="100" y1="130" x2="160" y2="130" marker-end="url(#arrow)" />
+      <line x1="260" y1="130" x2="320" y2="80" marker-end="url(#arrow)" />
+      <line x1="260" y1="130" x2="320" y2="200" marker-end="url(#arrow)" />
+      <line x1="420" y1="130" x2="470" y2="130" marker-end="url(#arrow)" />
+    </svg>
+  </section>
+
+  <!-- Benchmark charts -->
+  <section class="bench">
+    <h2>Benchmark overview</h2>
+    <img src="benchmark_chart.svg" alt="Benchmark chart" />
+  </section>
+
+  <footer>
+    RedHydra — Precision over paranoia.
+  </footer>
+
+  <!-- External script -->
+  <script src="script.js"></script>
+</body>
+</html>
