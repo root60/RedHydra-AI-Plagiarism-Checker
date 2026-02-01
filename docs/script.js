@@ -47,4 +47,4 @@ document.addEventListener('DOMContentLoaded', () => {
     { threshold: 0.1 }
   );
   steps.forEach((el) => observer.observe(el));
-});
+}); 
