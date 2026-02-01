@@ -110,7 +110,7 @@
     <text x="375" y="13" class="percentage" text-anchor="end">85%</text>
     
     <!-- Note Text (Split into two lines for fit) -->
-    <text x="120" y="35" class="note-text">based on the current model training data</text>
+    <text x="120" y="35" class="note-text">based on the current offline model training data</text>
     <text x="120" y="47" class="note-text">and external ai model data</text>
   </g>
 
@@ -124,4 +124,4 @@
     <!-- Percentage -->
     <text x="375" y="13" class="percentage" text-anchor="end">90%</text>
   </g>
-</svg>
+</svg> 
